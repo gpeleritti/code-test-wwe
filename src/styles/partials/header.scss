@@ -1,0 +1,21 @@
+.header-container {
+    min-height: 55px;
+    .navbar {
+       border: 0px;
+       &.wwe-navbar {
+          background-color: rgb(0,0,0);
+          border-color: rgb(0,0,0);
+          padding: 10px;
+          .navbar-header {
+            .icon-bar {
+               background-color: #fff;
+            }
+            .navbar-brand {
+               margin-left: 0px;
+               padding: 0px;
+            }
+          }
+       }
+
+    }
+}

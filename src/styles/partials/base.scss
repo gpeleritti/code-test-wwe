@@ -1,0 +1,14 @@
+.content {
+    min-height:480px;
+
+    .content-background {
+        background-image: url('../images/background.png');
+        height: 100%;
+        background-position: center top;
+        background-repeat: no-repeat;
+        background-size: cover;
+        position: absolute;
+        width: 100vw;
+        z-index: -1;
+    }
+}
