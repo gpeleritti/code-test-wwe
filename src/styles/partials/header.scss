@@ -1,14 +1,22 @@
 .header-container {
-    min-height: 55px;
+    position: relative;
+    min-height: 7rem;;
     .navbar {
        border: 0px;
+       font-size: 1.6rem;
        &.wwe-navbar {
           background-color: rgb(0,0,0);
           border-color: rgb(0,0,0);
           padding: 10px;
           .navbar-header {
+            .navbar-toggle:focus {
+              background: $black;
+            }
+            .navbar-toggle:hover {
+              background: $grey-wwe;
+            }
             .icon-bar {
-               background-color: #fff;
+               background-color: $white;
             }
             .navbar-brand {
                margin-left: 0px;
@@ -16,6 +24,41 @@
             }
           }
        }
+    }
+    #wweLinks{
+        .navbar-nav{
+            &.navbar-right{
+              li:first-child {
+                a:before {
+                  content: '';
+                  position:absolute;
+                  top: 1.7rem;
+                  right: 0;
+                  height: 1.5rem;
+                  background-color: $grey-wwe;
+                  width: 0.1rem;
+                  display: block;
+                  @media (max-width: $breakpoint-mobile) {
+                    display: none;
+                  }
+                  @media (min-width: $breakpoint-mobile) and (max-width: $breakpoint-desktop) {
+                    top: 2.4rem;
+                  }
+                }
+              }
+            }
 
+            a{
+               color: $white;
+               &:hover {
+                  font-weight: bold;
+               }
+               &.btn-primary {
+                 padding: 0.5rem 2rem;
+                 margin-top: 1rem;
+               }
+
+            }
+        }
     }
 }
